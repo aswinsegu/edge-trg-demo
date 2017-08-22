@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response>
+            <Step>
+                <Name>AM-EchoQueryString</Name>
+            </Step>
+        </Response>
+    </PostFlow>
+    <Flows>
+        <Flow name="CheckVerb">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>RF-VerbError</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(request.verb != "GET")</Condition>
+        </Flow>
+        <Flow name="CheckQueryString">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>RF-QueryString</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(request.queryparams.count = 0)</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/echo</BasePath>
+        <Properties/>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

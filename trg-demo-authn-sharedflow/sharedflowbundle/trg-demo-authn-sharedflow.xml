@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="trg-demo-authn-sharedflow">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502801914379</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>Basic AuthN for httpbin via KVM</Description>
+    <DisplayName>trg-demo-authn-sharedflow</DisplayName>
+    <LastModifiedAt>1502801979396</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>BA-TargetAuthN</Policy>
+        <Policy>KVM-GetTargetCreds</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <validate>false</validate>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

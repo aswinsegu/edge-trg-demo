@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="false" continueOnError="false" enabled="true" name="ML-Loggly">
+    <DisplayName>ML-Loggly</DisplayName>
+    <Syslog>
+        <Message>[cc26677d-fac8-4ab5-8c4b-81f09d0353fa@41058 tag="{organization.name}.{apiproxy.name}.{environment.name}"] Log Message: {loggly.now} </Message>
+        <Host>logs-01.loggly.com</Host>
+        <Port>514</Port>
+    </Syslog>
+</MessageLogging>

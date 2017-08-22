@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="trg-demo-jsontoxml">
+    <Basepaths>/jsontoxml</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502807098677</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>A simple proxy that converts JSON to XML</Description>
+    <DisplayName>trg-demo-jsontoxml</DisplayName>
+    <LastModifiedAt>1502807395781</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>JSON-to-XML-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

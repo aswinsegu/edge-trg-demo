@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="trg-demo-authz-hello">
+    <Basepaths>/authz/hello</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502819222324</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>OAuth 2 Resource</Description>
+    <DisplayName>trg-demo-authz-hello</DisplayName>
+    <LastModifiedAt>1502819440676</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>AM-Response</Policy>
+        <Policy>OA-ValidateToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

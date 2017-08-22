@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="trg-demo-echo">
+    <Basepaths>/echo</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502784665817</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>A simple proxy to echo query string with hello</Description>
+    <DisplayName>trg-demo-echo</DisplayName>
+    <LastModifiedAt>1502786550418</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>AM-EchoQueryString</Policy>
+        <Policy>RF-QueryString</Policy>
+        <Policy>RF-VerbError</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

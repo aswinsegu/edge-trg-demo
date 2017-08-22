@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-ServerError">
+    <DisplayName>AM-ServerError</DisplayName>
+    <Set>
+        <Payload contentType="application/json">
+            {
+                'error': 'unknown',
+                'message': 'Sorry, we screwed up!'
+            }
+        </Payload>
+        <StatusCode>500</StatusCode>
+        <ReasonPhrase>Server Error</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

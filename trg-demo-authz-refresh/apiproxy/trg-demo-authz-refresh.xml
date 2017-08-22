@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="trg-demo-authz-refresh">
+    <Basepaths>/authz/refresh</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502820636390</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>OAuth2 proxy to refresh access tokens</Description>
+    <DisplayName>trg-demo-authz-refresh</DisplayName>
+    <LastModifiedAt>1502821250272</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>OA-RefreshToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

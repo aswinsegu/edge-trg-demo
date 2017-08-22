@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="OA-RefreshToken">
+    <DisplayName>OA-RefreshToken</DisplayName>
+    <Operation>RefreshAccessToken</Operation>
+    <ExpiresIn>30000</ExpiresIn>
+    <RefreshTokenExpiresIn>60000</RefreshTokenExpiresIn>
+    <GrantType>request.queryparam.grant_type</GrantType>
+    <RefreshToken>request.queryparam.refreshtoken</RefreshToken>
+    <GenerateResponse enabled="true"/>
+</OAuthV2>

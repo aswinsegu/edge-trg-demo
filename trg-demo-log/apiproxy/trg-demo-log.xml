@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="trg-demo-log">
+    <Basepaths>/log</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502806562998</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>A simple proxy to do Syslog to Loggly</Description>
+    <DisplayName>trg-demo-log</DisplayName>
+    <LastModifiedAt>1502806562998</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>EV-GetTime</Policy>
+        <Policy>ML-Loggly</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

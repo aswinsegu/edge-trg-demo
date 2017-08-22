@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="trg-demo-apikey">
+    <Basepaths>/apikey</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1502791052126</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description>A simple proxy to demo API key verification</Description>
+    <DisplayName>trg-demo-apikey</DisplayName>
+    <LastModifiedAt>1502792073824</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>AM-HelloResponse</Policy>
+        <Policy>AM-NotFound</Policy>
+        <Policy>AM-ServerError</Policy>
+        <Policy>AM-Unauthorized</Policy>
+        <Policy>JS-TriggerError</Policy>
+        <Policy>VAK-CheckKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://TriggerError.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

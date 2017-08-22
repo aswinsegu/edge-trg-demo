@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PopulateCache async="false" continueOnError="false" enabled="true" name="PC-SetTimstampInCache">
+    <DisplayName>PC-SetTimstampInCache</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <Prefix>demo</Prefix>
+        <KeyFragment>timestamp</KeyFragment>
+    </CacheKey>
+    <ExpirySettings>
+        <TimeoutInSec>30</TimeoutInSec>
+    </ExpirySettings>
+    <Source>httpbin.now</Source>
+</PopulateCache>
