@@ -33,7 +33,7 @@
                 </Step>
             </Request>
             <Response/>
-            <Condition>(request.queryparams.count = 0)</Condition>
+            <Condition>(request.queryparam.text = null)</Condition>
         </Flow>
     </Flows>
     <HTTPProxyConnection>

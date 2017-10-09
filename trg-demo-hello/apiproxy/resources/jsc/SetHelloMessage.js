@@ -1,4 +1,4 @@
-var helloMessage = context.getVariable('request.querystring');
+var helloMessage = context.getVariable('message.queryparam.name');
 if (!helloMessage || ('' === helloMessage)) {
     helloMessage = 'World!';
 }

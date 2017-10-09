@@ -27,24 +27,34 @@
 	- Add Fault Rule to send custom 401 message if apikey is invalid "InvalidApiKey"
 	- Add Fault Rule to send custom 404 message if apikey is invalid "FailedToResolveAPIKey"
 	- Add Default Fault to send 500 error and trigger it by sending a queryparam trigger=500
-5. httpbin (trg-demo-target)
+5. Developer Portal
+	- OpenAPI Spec 
+		+ Take raw content from (https://github.com/apigee/api-platform-samples/blob/master/default-proxies/helloworld/openapi/mocktarget.yaml)
+	- Create Proxy from OpenAPI Spec with VerifyAPIKey
+	- Create a PortalProduct
+	- Create developer portal
+	- View Product details
+	- Register and sign in
+	- Create app and verify call
+	- Check on management UI to see developer and app are added
+6. httpbin (trg-demo-target)
 	- Add passthrough proxy to httpbin. (Make sure to use http and not https, https not working)
 	- Named target server
 	- Add Spike Arrest policy and check behavior
 	- Add Quota policy and check behavior
-6. Authentication (trg-demo-authn)
-	- Setup passthrough proxy to httpbin "https://httpbin.org/basic-auth/:user/:passwd"
-	- Basic Authentication - "curl -i -u "aa:bb" https://httpbin.org/basic-auth/aa/bb"
+7. Authentication (trg-demo-authn)
+	- Setup passthrough proxy to httpbin "http://httpbin.org/basic-auth/:user/:passwd"
+	- Basic Authentication - "curl -i -u "aa:bb" http://httpbin.org/basic-auth/aa/bb"
 	- Setup KVM map httpbin with username and password
 	- Get username and password from KVM policy
 	- Basic Authentication from Shared Flow and Flow Callout
-7. Authorization (trg-demo-authz-)
+8. Authorization (trg-demo-authz-)
 	- Setup trg-demo-authz-hello with hello proxy
 	- Setup trg-demo-authz-clientcred with client credentials grant type
 	- Setup trg-demo-authz-password with password grant type
 	- Setup trg-demo-authz-refresh for refresh token
 	- Demo Authorization Code grant type
-8. Logging (trg-demo-log)
+9. Logging (trg-demo-log)
 	- Setup passthrough proxy to httpbin
 	- Flow logger
 		+ JavaScript print
@@ -53,11 +63,11 @@
 			- Source Setup tab > Customer tokens > get the token here to use in Message Logging policy
 			- Search or Dashboard tab to look at logs
 		+ Flow Hook for logging (does not work when last checked)
-9. Transformation (trg-demo-transform)
+10. Transformation (trg-demo-transform)
 	- Setup passthrough proxy to httpbin
 	- JSON to XML with "https://httpbin.org/get"
 	- XML to JSON with "https://httpbin.org/xml"
-10. Caching
+11. Caching
 	- Response Cache (trg-demo-cache-response)
 		+ Call to "https://httpbin.org/delay/10" will delay for 10 seconds
 		+ Response cache with Key as request.uri will get it quicker after first
@@ -66,27 +76,36 @@
 		+ Setup current time in cache with "https://now.httpbin.org/"
 		+ Lookup cache and if cachehit do not call target, show cached timestamp
 		+ After cache timeout a new call will be made showing a new timestamp
-11. Service Callout (trg-demo-mashup)
+12. Service Callout (trg-demo-mashup)
 	- TODO
-12. Analytics
+13. Analytics
 	- Standard reports
 	- Create a custom report
 	- Create stats collector policy and create a custom report on it
-13. Management API
+14. Management API
 	- Demo samples for api proxy revisions, KVMs, products, etc
-14. NodeJS
+	- Demo authn and authz for management API calls
+		+ Using basic auth and OAuth2
+		+ Using tools acurl and get_token
+15. NodeJS
 	- Demo Hello/Echo
-15. Dev Tools
+16. Dev Tools
 	- OpenAPI Spec
 	- Git / Branching
 	- Maven
 	- ApigeeTool
 	- Testing / BDD (https://github.com/gahana/echo)
-16. API BaaS
+	- Demo Jenkins
+17. API BaaS
 	- Data store best practices
 		+ http://docs.apigee.com/app-services/content/optimizing-access-your-api-baas-data-store
 	- When to use BaaS and when not to
 		+ http://docs.apigee.com/api-baas/content/evaluating-api-baas-data-store
+18. Monetization
+
+19. Patterns and AntiPatterns
+	- Deployment patterns
+		+ Fault handling (https://community.apigee.com/content/kbentry/23724/an-error-handling-pattern-for-apigee-proxies.html)
 
 
 ## Policies covered
