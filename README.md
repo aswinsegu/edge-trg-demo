@@ -29,14 +29,19 @@
 	- Add Default Fault to send 500 error and trigger it by sending a queryparam trigger=500
 5. Developer Portal
 	- OpenAPI Spec 
-		+ Take raw content from (https://github.com/apigee/api-platform-samples/blob/master/default-proxies/helloworld/openapi/mocktarget.yaml)
-	- Create Proxy from OpenAPI Spec with VerifyAPIKey
-	- Create a PortalProduct
-	- Create developer portal
+		+ Take raw content from (https://goo.gl/ut6A6d) (https://github.com/apigee/api-platform-samples/blob/master/default-proxies/helloworld/openapi/mocktarget.yaml)
+		+ Or from here emp-spec: (https://goo.gl/oWVyHS) (http://playground.apistudio.io/070cde0a-44f7-4e2c-8085-6e1020db7baf/spec)
+	- Create 
+		+ Proxy from OpenAPI Spec (emp-api)
+		+ Add SpikeArrest
+		+ Add VerifyAPIKey
+	- Create a EmpProduct
+	- Create developer portal (emp-portal)
 	- View Product details
 	- Register and sign in
 	- Create app and verify call
 	- Check on management UI to see developer and app are added
+	- Add Quota policy and check behavior
 6. httpbin (trg-demo-target)
 	- Add passthrough proxy to httpbin. (Make sure to use http and not https, https not working)
 	- Named target server
@@ -77,11 +82,16 @@
 		+ Lookup cache and if cachehit do not call target, show cached timestamp
 		+ After cache timeout a new call will be made showing a new timestamp
 12. Service Callout (trg-demo-mashup)
-	- TODO
+	- Get JSON response from "http://mocktarget.apigee.net/json"
+	- Get JSON response from "http://httpbin.org/uuid"
+	- Merge the two responses to get a single JSON response with attributes firstName, lastName, city, state and uuid
 13. Analytics
 	- Standard reports
 	- Create a custom report
+		+ Traffic and proxy errors by verb
+		+ Traffic and proxy errors by day of the week
 	- Create stats collector policy and create a custom report on it
+	- Idea: Histogram of response times for requests
 14. Management API
 	- Demo samples for api proxy revisions, KVMs, products, etc
 	- Demo authn and authz for management API calls
@@ -89,10 +99,12 @@
 		+ Using tools acurl and get_token
 15. NodeJS
 	- Demo Hello/Echo
+		+ https://github.com/gahana/node-echo
+		+ https://github.com/gahana/node-hello
 16. Dev Tools
 	- OpenAPI Spec
 	- Git / Branching
-	- Maven
+	- Maven (https://github.com/gahana/node-hello)
 	- ApigeeTool
 	- Testing / BDD (https://github.com/gahana/echo)
 	- Demo Jenkins
@@ -102,11 +114,12 @@
 	- When to use BaaS and when not to
 		+ http://docs.apigee.com/api-baas/content/evaluating-api-baas-data-store
 18. Monetization
-
+	- Showcase features
 19. Patterns and AntiPatterns
 	- Deployment patterns
 		+ Fault handling (https://community.apigee.com/content/kbentry/23724/an-error-handling-pattern-for-apigee-proxies.html)
-
+    - Anti patterns book by support team
+    	+ https://community.apigee.com/storage/attachments/5345-the-book-of-apigee-edge-antipatterns.pdf
 
 ## Policies covered
 

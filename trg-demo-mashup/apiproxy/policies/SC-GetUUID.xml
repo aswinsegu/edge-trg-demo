@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC-GetUUID">
+    <DisplayName>SC-GetUUID</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="uuidRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>uuidResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>http://httpbin.org/uuid</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

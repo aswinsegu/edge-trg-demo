@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-SetResponse">
+    <DisplayName>AM-SetResponse</DisplayName>
+    <Set>
+        <Payload contentType="application/json">
+            {
+                "uuid": "{mashup.uuid}",
+                "firstName":"{mashup.firstName}", 
+                "lastName":"{mashup.lastName}",
+                "city": "{mashup.city}",
+                "state": "{mashup.state}"
+            }
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</AssignMessage>

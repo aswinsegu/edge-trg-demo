@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-GetAttributes">
+    <DisplayName>EV-GetAttributes</DisplayName>
+    <JSONPayload>
+        <Variable name="firstName" type="string">
+            <JSONPath>$.firstName</JSONPath>
+        </Variable>
+        <Variable name="lastName" type="string">
+            <JSONPath>$.lastName</JSONPath>
+        </Variable>
+        <Variable name="city" type="string">
+            <JSONPath>$.city</JSONPath>
+        </Variable>
+        <Variable name="state" type="string">
+            <JSONPath>$.state</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">response</Source>
+    <VariablePrefix>mashup</VariablePrefix>
+</ExtractVariables>

@@ -2,7 +2,7 @@
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 USAGE="Usage: deploy [proxy name]"
-ORG="srinisref"
+ORG="srinis"
 ENV="test"
 
 set -eu
