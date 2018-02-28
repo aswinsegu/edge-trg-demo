@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="demo-lb-ping">
+    <Basepaths>/demo-lb-ping</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1519791954193</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>demo-lb-ping</DisplayName>
+    <LastModifiedAt>1519791992070</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <ManifestVersion>2a3fef1b3838299df387b7c7c050fef2d17729ae7e8102f6780d3acf5f06748d95ae9d69929a79fb4c9044c95673638c14ca30fb72059585a56c34a1bddd7ca7</ManifestVersion>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

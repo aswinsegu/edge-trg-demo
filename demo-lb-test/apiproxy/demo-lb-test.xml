@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="demo-lb-test">
+    <Basepaths>/demo-lb-test</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1519783219073</CreatedAt>
+    <CreatedBy>ssudhindra@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>demo-lb-test</DisplayName>
+    <LastModifiedAt>1519801037855</LastModifiedAt>
+    <LastModifiedBy>ssudhindra@google.com</LastModifiedBy>
+    <ManifestVersion>9cc57a47c42a1f3ec3f43e27e46d41b9041c820d689add6a84e32821e8a1234ab2b8575ee91da9376d8ebf752b8330e66e7cf5abb615474d9552d2fbc9930199</ManifestVersion>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

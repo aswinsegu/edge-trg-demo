@@ -120,6 +120,13 @@
 		+ Fault handling (https://community.apigee.com/content/kbentry/23724/an-error-handling-pattern-for-apigee-proxies.html)
     - Anti patterns book by support team
     	+ https://community.apigee.com/storage/attachments/5345-the-book-of-apigee-edge-antipatterns.pdf
+20. Load balancing and Health check
+	- demo-lb-ping proxy deployed on org 1
+	- demo-lb-pong proxy deployed on org 2
+	- demo-lb-test proxy deployed on any org
+	- Modify load balance algorithm and check behavior
+	- Undeploy pong proxy to see calls routed to only ping without any error
+	- Redeploy pong proxy to see calls routed to pong automatically
 
 ## Policies covered
 
