@@ -7,8 +7,8 @@
             <Headers/>
             <Payload contentType="application/json">
                 {
-                    'error-code': 'invalid-verb',
-                    'error-message': 'Only GET verb allowed'
+                    "error-code": "invalid-verb",
+                    "error-message": "Only GET verb allowed"
                 }
             </Payload>
             <StatusCode>400</StatusCode>

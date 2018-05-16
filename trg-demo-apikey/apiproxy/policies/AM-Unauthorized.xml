@@ -4,8 +4,8 @@
     <Set>
         <Payload contentType="application/json">
             {
-                'error': 'invalid-api-key',
-                'message': 'Please send a valid API Key'
+                "error": "invalid-api-key",
+                "message": "Please send a valid API Key"
             }
         </Payload>
         <StatusCode>401</StatusCode>

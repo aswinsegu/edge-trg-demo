@@ -4,8 +4,8 @@
     <Set>
         <Payload contentType="application/json">
             {
-                'error': 'unknown',
-                'message': 'Sorry, we screwed up!'
+                "error": "unknown",
+                "message": "Sorry, we screwed up!"
             }
         </Payload>
         <StatusCode>500</StatusCode>

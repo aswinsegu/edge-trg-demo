@@ -7,8 +7,8 @@
             <Headers/>
             <Payload contentType="application/json">
                 {
-                    'error-code': 'text-query-string-absent',
-                    'error-message': 'Query string text not present'
+                    "error-code": "text-query-string-absent",
+                    "error-message": "Query string text not present"
                 }
             </Payload>
             <StatusCode>400</StatusCode>

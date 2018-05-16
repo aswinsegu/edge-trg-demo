@@ -4,8 +4,8 @@
     <Set>
         <Payload contentType="application/json">
             {
-                'error': 'invalid-resouce',
-                'message': 'Requested resource does not exist'
+                "error": "invalid-resouce",
+                "message": "Requested resource does not exist"
             }
         </Payload>
         <StatusCode>404</StatusCode>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <Policies>
+        <VersionInfo resourceName="Assign-Message-1" version="5644b384276da6e9929aa8165871ec28066b7032990b9a01b72d1ea2411a22414030974db65654b9227296e5e11f601e809228f1a4dd28d9344dd6a803bfaf30"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="9f45ad17954dee4800c8db0a67d5b37eeea4cde278d46595577389003f5a49cf53a12651b8c55c68a921074c945cd12237937c3e33ffdce360d2e27c2bc0ad59"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>
